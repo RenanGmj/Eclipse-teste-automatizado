@@ -19,10 +19,9 @@ public class caixa_preta {
 	
 	@Test
 	public void teste() {
-		driver.get("https://www.google.com.br");
-		driver. findElement (By.className ( "gLFyf")) . sendKeys ("Senai");
-		driver. findElement (By.className ("gLFyf")) . sendKeys (Keys. ENTER);
-		driver.findElement(By.className ("LC201b")).click();
+		driver.get("https://g1.globo.com");
+		driver.findElement(By.id("busca-campo")).sendKeys("carros");
+		driver.findElement(By.id("busca-campo")).sendKeys(Keys.RETURN);
 	}
 
 }
